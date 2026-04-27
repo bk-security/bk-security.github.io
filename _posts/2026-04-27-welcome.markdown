@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Welcome"
+date:   2026-04-27 14:14:17 -0700
+categories: meta
+---
+
+This is a place for me to write down what I learn doing offensive security work — vulnerability research, application and cloud security, and the bits of methodology that don't fit neatly into a client report.
+
+Most of my time is spent on assessments: web apps, APIs, cloud environments, internal networks, and the identity systems that tie them together. The interesting parts of that work are usually the patterns — the recurring shapes of broken access control, the cloud misconfiguration that keeps showing up across providers, the AD attack chain that's "well known" but still works in 2026. Those patterns are what I plan to write about here.
+
+What you can expect:
+
+- **Technical writeups** — anonymized findings, root cause walkthroughs, and the reasoning behind exploitability calls.
+- **Tooling notes** — small scripts and workflows I use to speed up discovery and reporting, with the rough edges left in.
+- **Methodology** — how I approach a target, what I check first, where I've been wrong before.
+- **Reading notes** — CVE deep-dives, threat-actor TTPs, and research I want to remember.
+
+Nothing here represents the views of any employer, past or present, and no client-specific information will ever appear. Everything is either public, reproduced in a lab, or generic enough to apply broadly.
+
+If something I write helps you find a bug or fix one — that's the goal. Thanks for reading.
