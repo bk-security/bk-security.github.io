@@ -17,10 +17,6 @@ This site is a place to publish offensive security writing that does not fit wit
 
 **Reading notes.** Summaries of CVE deep-dives, research papers, and notable threat actor TTPs that warrant a closer look.
 
-## Format
-
-Every writeup published here is intended to be reproducible. Each post includes a lab setup section, the exact commands and payloads used, the dead ends encountered along the way, and a concrete remediation block. Posts that do not meet that standard are not published as writeups.
-
 ## Scope and disclosure
 
 Nothing on this site reflects the views of any current or past employer. No client names, sanitized internal hostnames, customer data, or other identifying details appear in any post. Content is limited to public CVEs, public bug bounty disclosures, and lab environments built and tested independently.
