@@ -5,26 +5,24 @@ date:   2026-04-27 14:14:17 -0700
 categories: meta
 ---
 
-I do offensive security work for a living. Web apps, APIs, cloud, internal networks, and the identity systems that hold all of it together. After about five years of writing client reports that almost nobody outside the engagement reads, I want a place to write things down where I can find them again, and where someone else might find them useful too.
+This site is a place to publish offensive security writing that does not fit within the boundaries of client engagements. The goal is to document techniques, tooling, and research in a form that is useful both as personal reference material and to other practitioners working in the same space.
 
-This site is that place.
+## What you will find here
 
-## What you'll find here
+**Writeups.** Walkthroughs of vulnerabilities worth explaining in depth: discovery, root cause analysis, exploitation, impact, and concrete remediation guidance. Every example is reproduced in a lab environment or drawn from public material.
 
-**Writeups.** When I find a bug worth explaining, I'll walk through it: how I found it, what made it exploitable, what the impact actually was, and how I'd fix it. Everything here is reproduced in a lab or pulled from public material. Nothing client-specific, ever.
+**Technique posts.** Focused pieces on a specific attack chain or pattern. Topics include Kerberoasting, Active Directory Certificate Services misconfigurations, server-side request forgery, and IAM trust policy abuse. Each post is payload-driven and grounded in the underlying mechanism.
 
-**Technique posts.** Short pieces on a single attack chain or pattern. Kerberoasting, AD CS misconfigurations, SSRF gadgets, IAM trust-policy abuse, that kind of thing. Less narrative, more "here's the payload, here's why it works."
+**Tooling.** Python and Bash utilities that have proven useful across assessments, with the design tradeoffs and limitations documented alongside the code.
 
-**Tooling.** Small Python and Bash scripts I keep reaching for. Rough edges left in.
+**Reading notes.** Summaries of CVE deep-dives, research papers, and notable threat actor TTPs that warrant a closer look.
 
-**Reading notes.** CVE deep-dives, papers, threat actor TTPs I want to remember.
+## Format
 
-## A note on format
+Every writeup published here is intended to be reproducible. Each post includes a lab setup section, the exact commands and payloads used, the dead ends encountered along the way, and a concrete remediation block. Posts that do not meet that standard are not published as writeups.
 
-Every writeup here aims to be reproducible. That means a lab-setup section, the exact commands and payloads, the failure modes I hit on the way to the working version, and a remediation block at the end. If a post can't be reproduced from what's on the page, it's not a writeup, it's a tweet.
+## Scope and disclosure
 
-## A note on what's *not* here
-
-Nothing represents the views of any employer, past or present. No client names, no sanitized internal hostnames, no screenshots with identifying bytes left in them. If something isn't in a public CVE, a public bug bounty disclosure, or a lab I built myself, I'm not writing about it.
+Nothing on this site reflects the views of any current or past employer. No client names, sanitized internal hostnames, customer data, or other identifying details appear in any post. Content is limited to public CVEs, public bug bounty disclosures, and lab environments built and tested independently.
 
 Thanks for reading.

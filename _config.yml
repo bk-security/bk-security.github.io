@@ -21,9 +21,8 @@
 title: Bruce Kang | Offensive Security
 email: 275828781+bk-security@users.noreply.github.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Notes on offensive security from Bruce Kang. Vulnerability research,
-  application and cloud security, and reproducible writeups from
-  real-world adversarial work.
+  Offensive security writing by Bruce Kang: vulnerability research,
+  application security, cloud security, and reproducible writeups.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bk-security.github.io"
 github_username:  bk-security
