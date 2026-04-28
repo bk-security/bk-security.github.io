@@ -4,30 +4,30 @@ title: About
 permalink: /about/
 ---
 
-I'm Bruce Kang, an OSCE3- and OSCP-certified security engineer focused on offensive security. I've spent ~5 years finding real, exploitable issues in web applications, APIs, distributed systems, and cloud environments — and translating those findings into clear remediation guidance for the engineering teams that have to fix them.
+I'm Bruce Kang. Senior security engineer at Praetorian, doing offensive security against enterprise environments. About five years into the work.
 
-## What I work on
+## What I spend time on
 
-- **Application security** — manual code review, threat modeling, and vulnerability discovery against web apps and APIs.
-- **Cloud assessment** — IAM misconfigurations, exposed storage, insecure serverless patterns, and identity-based attack paths across AWS, Azure, and GCP.
-- **Active Directory** — end-to-end attack chains: Kerberoasting, ACL abuse, AD CS exploitation, constrained delegation.
-- **Vulnerability research** — root cause analysis, exploitability assessment, and proof-of-concept development.
-- **Tooling** — Python and Bash automation to accelerate discovery, scanning, and reporting.
+* **Web app and API testing.** Manual review, code review when I can get it, threat modeling. The vulnerability classes that don't fall out of a scanner.
+* **Cloud assessment** across AWS, Azure, and GCP. IAM trust policy abuse, exposed storage, serverless surprises, identity-based pivoting between accounts.
+* **Active Directory and Entra.** Kerberoasting, ACL abuse, AD CS, constrained delegation, all the way to domain compromise. Pulling on identity threads usually pays off more than any single exploit.
+* **Vulnerability research.** Root cause analysis, exploitability work, building proof-of-concept exploits to back up severity calls.
+* **Tooling.** Python and Bash, mostly. Whatever turns a recurring 30-minute task into a 30-second one.
 
-## Experience
+## A bit of history
 
-- **Praetorian** (2022 – present) — Senior Security Engineer. 50+ enterprise assessments per year across web, cloud, and internal networks.
-- **Synack** (2021 – 2022) — Security Researcher on the Synack Red Team, specializing in authorization and access-control flaws. Published two articles on the OWASP Top 10.
-- **Avanade** (2021) — Security Analyst Intern. Threat triage and proactive hunting across enterprise environments.
+* **Praetorian** (2022 to present), Senior Security Engineer. Roughly 50 enterprise assessments a year across web, cloud, and internal networks.
+* **Synack** (2021 to 2022), Security Researcher on the Synack Red Team. Focused on authorization and access control flaws. Two posts published on the Synack blog covering the OWASP Top 10.
+* **Avanade** (2021), Security Analyst Intern. SOC-side work, threat hunting across enterprise environments.
 
 ## Certifications
 
-OSCE3 · OSCP · OSWE · OSED · OSEP · AWS Solutions Architect (Associate) · Security+ · Network+ · A+ · AZ-900
+In case you care about the alphabet soup: OSCE3, OSCP, OSWE, OSED, OSEP, AWS Solutions Architect Associate, Security+, Network+, A+, AZ-900.
 
 ## Education
 
-B.S. in Information Technology, University of Washington (2021).
+B.S. in Information Technology, University of Washington, 2021.
 
 ## Elsewhere
 
-Source for this site lives at [github.com/bk-security/bk-security.github.io](https://github.com/bk-security/bk-security.github.io).
+Source for this site is at [github.com/bk-security/bk-security.github.io](https://github.com/bk-security/bk-security.github.io).

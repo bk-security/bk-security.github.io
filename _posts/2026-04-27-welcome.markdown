@@ -5,17 +5,26 @@ date:   2026-04-27 14:14:17 -0700
 categories: meta
 ---
 
-This is a place for me to write down what I learn doing offensive security work — vulnerability research, application and cloud security, and the bits of methodology that don't fit neatly into a client report.
+I do offensive security work for a living. Web apps, APIs, cloud, internal networks, and the identity systems that hold all of it together. After about five years of writing client reports that almost nobody outside the engagement reads, I want a place to write things down where I can find them again, and where someone else might find them useful too.
 
-Most of my time is spent on assessments: web apps, APIs, cloud environments, internal networks, and the identity systems that tie them together. The interesting parts of that work are usually the patterns — the recurring shapes of broken access control, the cloud misconfiguration that keeps showing up across providers, the AD attack chain that's "well known" but still works in 2026. Those patterns are what I plan to write about here.
+This site is that place.
 
-What you can expect:
+## What you'll find here
 
-- **Technical writeups** — anonymized findings, root cause walkthroughs, and the reasoning behind exploitability calls.
-- **Tooling notes** — small scripts and workflows I use to speed up discovery and reporting, with the rough edges left in.
-- **Methodology** — how I approach a target, what I check first, where I've been wrong before.
-- **Reading notes** — CVE deep-dives, threat-actor TTPs, and research I want to remember.
+**Writeups.** When I find a bug worth explaining, I'll walk through it: how I found it, what made it exploitable, what the impact actually was, and how I'd fix it. Everything here is reproduced in a lab or pulled from public material. Nothing client-specific, ever.
 
-Nothing here represents the views of any employer, past or present, and no client-specific information will ever appear. Everything is either public, reproduced in a lab, or generic enough to apply broadly.
+**Technique posts.** Short pieces on a single attack chain or pattern. Kerberoasting, AD CS misconfigurations, SSRF gadgets, IAM trust-policy abuse, that kind of thing. Less narrative, more "here's the payload, here's why it works."
 
-If something I write helps you find a bug or fix one — that's the goal. Thanks for reading.
+**Tooling.** Small Python and Bash scripts I keep reaching for. Rough edges left in.
+
+**Reading notes.** CVE deep-dives, papers, threat actor TTPs I want to remember.
+
+## A note on format
+
+Every writeup here aims to be reproducible. That means a lab-setup section, the exact commands and payloads, the failure modes I hit on the way to the working version, and a remediation block at the end. If a post can't be reproduced from what's on the page, it's not a writeup, it's a tweet.
+
+## A note on what's *not* here
+
+Nothing represents the views of any employer, past or present. No client names, no sanitized internal hostnames, no screenshots with identifying bytes left in them. If something isn't in a public CVE, a public bug bounty disclosure, or a lab I built myself, I'm not writing about it.
+
+Thanks for reading.
