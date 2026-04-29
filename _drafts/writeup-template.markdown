@@ -14,7 +14,7 @@ One paragraph. What's the bug, what does it get an attacker, why should the read
 
 Two or three sentences on the target, the technology stack, and why this surface matters. Skip the OWASP 101.
 
-## Lab setup
+## Lab Setup
 
 Exact versions. Exact commands to spin it up. A reader should be able to copy-paste and reproduce.
 
@@ -49,7 +49,7 @@ Concrete. What can an attacker do, against what data, under what preconditions. 
 
 Specific. The fix, not "implement defense in depth." Point to the line, the config knob, the framework primitive that makes this go away. Mention what doesn't fix it (WAF rules, blocklists, etc).
 
-## Disclosure timeline
+## Disclosure Timeline
 
 If applicable.
 

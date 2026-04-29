@@ -6,7 +6,7 @@ permalink: /about/
 
 I am Bruce Kang, an offensive security engineer with approximately five years of experience identifying and exploiting vulnerabilities across enterprise environments. My work focuses on adversarial assessment of web applications, APIs, cloud platforms, and internal networks, along with the research and tooling that supports it.
 
-## Focus areas
+## Focus Areas
 
 * **Web application and API security.** Manual testing, source code review, and threat modeling, with emphasis on the vulnerability classes that automated scanners do not reliably surface.
 * **Cloud security** across AWS, Azure, and GCP. IAM trust policy abuse, exposed storage and data services, insecure serverless functions, and identity-based pivoting between accounts.

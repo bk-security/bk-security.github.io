@@ -7,7 +7,7 @@ categories: meta
 
 This site is a place to publish offensive security writing that does not fit within the boundaries of client engagements. The goal is to document techniques, tooling, and research in a form that is useful both as personal reference material and to other practitioners working in the same space.
 
-## What you will find here
+## What You Will Find Here
 
 **Writeups.** Walkthroughs of vulnerabilities worth explaining in depth: discovery, root cause analysis, exploitation, impact, and concrete remediation guidance. Every example is reproduced in a lab environment or drawn from public material.
 
@@ -17,7 +17,7 @@ This site is a place to publish offensive security writing that does not fit wit
 
 **Reading notes.** Summaries of CVE deep-dives, research papers, and notable threat actor TTPs that warrant a closer look.
 
-## Scope and disclosure
+## Scope and Disclosure
 
 Nothing on this site reflects the views of any current or past employer. No client names, sanitized internal hostnames, customer data, or other identifying details appear in any post. Content is limited to public CVEs, public bug bounty disclosures, and lab environments built and tested independently.
 
