@@ -73,8 +73,24 @@ code {
   color: #e8e8e8;
 }
 
-.highlight {
+pre code,
+.highlight code,
+figure.highlight code {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.highlight,
+figure.highlight,
+.highlighter-rouge .highlight {
   background: #262626;
+}
+
+.highlight pre,
+figure.highlight pre {
+  background-color: transparent;
+  border: 0;
 }
 
 .highlight .c, .highlight .c1, .highlight .cm { color: #888; }
