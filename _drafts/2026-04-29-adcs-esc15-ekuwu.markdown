@@ -59,7 +59,7 @@ certipy find -u 'lowpriv@target.local' -p 'password' \
 
 A typical result includes `WebServer` flagged with `[!] Vulnerabilities: ESC15`.
 
-Next, request a certificate against the vulnerable template, supplying both an arbitrary subject and the Client Authentication application policy: *[VERIFY: confirm the exact Certipy CLI flag for application-policy injection against your installed version; flag spelling has shifted across PRs.]*
+Next, request a certificate against the vulnerable template, supplying both an arbitrary subject and the Client Authentication application policy. Certipy's `req` subcommand accepts `-application-policies` (single hyphen, plural), with the value either an OID or a human-readable name; multiple policies can be passed space-separated.
 
 ```
 certipy req \
