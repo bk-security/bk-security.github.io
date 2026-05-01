@@ -52,7 +52,7 @@ Why does this matter? Because the vendor has many customers, and each customer t
 
 The trust policy above looks correct. The mistake lives on the vendor's side, not yours. If the vendor's backend allows a customer to specify an arbitrary ExternalId in an API request, an attacker can configure the vendor's integration to point at a victim customer's role ARN, supply the victim's ExternalId (which is sometimes guessable, occasionally just the victim's account ID), and have the vendor's role assume into the victim's account on the attacker's behalf.
 
-Praetorian (where I worked until March 2026) ran a survey of 90 SaaS vendors that perform cross-account integrations. Of those, 37% had ExternalId implementations that allowed this attack. In 15% of cases, the vendor's UI presented the ExternalId as immutable, but the backend API accepted tampered values via PUT or POST requests.
+Praetorian (where I worked until March 2026) ran a survey of 90 SaaS vendors that perform cross-account integrations. Of those, 37% had not implemented ExternalId correctly against confused-deputy attacks. A further 15% had UI flows that handled ExternalId correctly but backend APIs that accepted tampered values via PUT or POST, putting the combined vulnerable share at roughly half. The most common failure mode in the second bucket was a UI that presented the ExternalId as immutable while the underlying API accepted any value the request body contained.
 
 This vulnerability class is called the vendor-side confused deputy. From the customer's side, the trust policy looks like best-practice; from the vendor's side, the API does not enforce what the policy assumes it enforces.
 
