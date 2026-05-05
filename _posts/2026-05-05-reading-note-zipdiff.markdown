@@ -21,7 +21,7 @@ The paper opens by anchoring the work in the Android master key vulnerability fr
 Five concrete attack scenarios, each grounded in a specific ambiguity from the taxonomy:
 
 1. **Secure email gateway bypass.** A ZIP attached to an email is scanned as one set of files and extracted by the recipient as a different set. Reported to and rewarded by Gmail (rated medium severity, $1,337 bounty), Coremail, and Zoho.
-2. **Office document content spoofing.** Office documents are ZIP archives. A doc that displays one body when opened in one suite and a different body in another is, by definition, two different documents sharing one signature.
+2. **Office document content spoofing.** Office documents are ZIP archives. A document that displays one body when opened in one suite and a different body in another is, by definition, two different documents sharing one signature.
 3. **LibreOffice signature forgery.** The verifier and the renderer disagreed about which `content.xml` is the canonical one. CVE assigned.
 4. **Spring Boot nested JAR signature forgery.** Spring Boot's `NestedJarFile` class uses a custom ZIP parser that diverges from the JDK's. A signed JAR can be tampered with such that the JDK verifier still passes, but Spring Boot loads different code at runtime. CVE assigned.
 5. **VS Code extension ID impersonation.** An extension package can be constructed so that the marketplace server accepts it under one identity while VS Code installs it under another.
