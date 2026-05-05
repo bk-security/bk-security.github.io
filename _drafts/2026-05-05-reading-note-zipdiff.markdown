@@ -12,7 +12,21 @@ tags: [parsing-differentials, fuzzing, file-formats, usenix-security-2025]
 
 ## The Claim
 
-The ZIP format is old, the specification has accumulated ambiguities over decades, and every language ecosystem ships at least one parser. The authors built a differential fuzzer that compares parser behavior across implementations, ran it against 50 ZIP parsers spanning 19 programming languages, and identified 14 distinct parsing-ambiguity types organized into three categories. Ten of the fourteen had not been previously documented. Each ambiguity is a place where two parsers given the same input produce different conceptual files, which is the precondition for the class of attacks called parser differentials.
+The ZIP format is old, the specification has accumulated ambiguities over decades, and every language ecosystem ships at least one parser. The authors built a differential fuzzer that compares parser behavior across implementations, ran it against 50 ZIP parsers spanning 19 programming languages, and identified 14 distinct parsing-ambiguity types organized into three categories: redundant metadata (fields stored twice in both the central directory and the local file headers, where the two copies can disagree), file path processing (filenames that two parsers normalize or split differently), and ZIP structure positioning (where in the file each parser starts looking for the canonical structure). Ten of the fourteen ambiguity types had not been previously documented. Each ambiguity is a place where two parsers given the same input produce different conceptual files, which is the precondition for the class of attack called parser differentials.
+
+The paper opens by anchoring the work in the Android master key vulnerability from 2013, where a mismatch between the ZIP component that verified APK signatures and the component that decompressed contents allowed malicious code to run in privileged applications without breaking signatures. The authors take that one-off finding and turn it into a systematic taxonomy.
+
+## What They Demonstrate
+
+Five concrete attack scenarios, each grounded in a specific ambiguity from the taxonomy:
+
+1. **Secure email gateway bypass.** A ZIP attached to an email is scanned as one set of files and extracted by the recipient as a different set. Reported to and rewarded by Gmail (rated medium severity, $1,337 bounty), Coremail, and Zoho.
+2. **Office document content spoofing.** Office documents are ZIP archives. A doc that displays one body when opened in one suite and a different body in another is, by definition, two different documents sharing one signature.
+3. **LibreOffice signature forgery.** The verifier and the renderer disagreed about which `content.xml` is the canonical one. CVE assigned.
+4. **Spring Boot nested JAR signature forgery.** Spring Boot's `NestedJarFile` class uses a custom ZIP parser that diverges from the JDK's. A signed JAR can be tampered with such that the JDK verifier still passes, but Spring Boot loads different code at runtime. CVE assigned.
+5. **VS Code extension ID impersonation.** An extension package can be constructed so that the marketplace server accepts it under one identity while VS Code installs it under another.
+
+Three CVEs total, assigned against Go, LibreOffice, and Spring Boot. The authors also propose seven mitigation strategies covering parser hardening, format-level changes, and downstream consumer practices.
 
 ## Why It Matters
 
