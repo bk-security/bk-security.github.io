@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Semgrep Rule Pack for Header-Trust Auth Bypass Patterns"
-date:   2026-05-05 14:00:00 -0700
+date:   2026-05-12 14:00:00 -0700
 categories: tooling
 tags: [semgrep, static-analysis, appsec, auth-bypass, cve-2025-29927]
 ---
